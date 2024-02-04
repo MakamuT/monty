@@ -1,4 +1,4 @@
-#include "monty.c"
+#include "monty.h"
 /**
  * f_pall -  prints all the values on the stack
  * @h: head
@@ -11,7 +11,7 @@ void f_pall(stack_t **h, unsigned int counter)
 	stack_t *i;
 	(void)counter;
 
-	i = *head;
+	i = *h;
 	if (i == NULL)
 		return;
 
